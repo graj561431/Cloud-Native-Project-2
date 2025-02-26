@@ -7,7 +7,7 @@ from flask import Flask, request, redirect, render_template, send_file
 from google.cloud import storage
 
 
-genai.configure(api_key=os.environ['GEMINI_API'])
+genai.configure(api_key=os.environ['GEMINI_API' , ''])
 
 BUCKET_NAME = "my-bucket-for-project"
 
